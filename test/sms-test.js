@@ -1,8 +1,8 @@
 const expect = require('chai').expect;
 const nock = require('nock');
 const SMS = require('../index')({
-  apiKey: 'f0477fbd1d35d06d450890e9cfbd22b74c87d6f81ec9d5e12c1323db1ada58a2',
-  username: 'johnkariuki'
+  apiKey: 'myApiKey',
+  username: 'myUsername'
 }).SMS;
 
 const mockData = require('./mock-data');

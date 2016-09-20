@@ -1,4 +1,5 @@
 const fs = require('fs');
+const _ = require('lodash');
 const querystring = require('querystring');
 const request = require('request');
 
@@ -24,12 +25,27 @@ class SMS extends AfricasTalkingGateway {
       throw new Error('Specify a message to send.');
     }
 
-    const newMessage = querystring.stringify({
+    let newMessage = {
       username: this.username,
-      to: payload.to,
-      message: payload.message,
+    };
+
+    const opts = [
+      'to',
+      'message',
+      'from',
+      'enqueue',
+      'keyword',
+      'retryDurationInHours',
+      'linkId',
+    ];
+
+    _.forEach(payload, (v, k) => {
+      if (opts.indexOf(k) !== -1) {
+        newMessage[k] = v;
+      }
     });
 
+    newMessage = querystring.stringify(newMessage);
 
     super.setRequestOptions({
       form: newMessage,

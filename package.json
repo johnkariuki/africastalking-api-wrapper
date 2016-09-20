@@ -4,7 +4,7 @@
   "description": "An Africastalking Node.js API services wrapper",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -28,12 +28,15 @@
     "npm": "^3.10.8"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
     "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.2.2",
     "gulp": "^3.9.1",
-    "gulp-eslint": "^3.0.1"
+    "gulp-eslint": "^3.0.1",
+    "mocha": "^3.0.2",
+    "nock": "^8.0.0"
   },
   "dependencies": {
     "js-yaml": "^3.6.1",

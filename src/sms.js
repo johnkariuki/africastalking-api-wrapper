@@ -40,7 +40,7 @@ class SMS extends AfricasTalkingGateway {
     });
 
     request(this.options, (error, response) => {
-        cb(response.statusCode, response.body);
+      cb(response.statusCode, response.body);
     });
   }
 }

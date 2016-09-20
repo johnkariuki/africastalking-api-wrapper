@@ -1,0 +1,6 @@
+---
+endpoints:
+  sms:
+    full: https://api.africastalking.com/version1/messaging
+    host: api.africastalking.com
+    path: "/version1/messaging"

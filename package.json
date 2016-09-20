@@ -1,0 +1,44 @@
+{
+  "name": "africastalking-wrapper",
+  "version": "1.0.0",
+  "description": "An Africastalking Node.js API services wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:johnkariuki/africastalking-api-wrapper.git"
+  },
+  "keywords": [
+    "africastalking",
+    "sms",
+    "voice",
+    "USSD",
+    "airtime"
+  ],
+  "author": "John Kariuki (https://github.com/johnkariuki)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnkariuki/africastalking-wrapper/issues"
+  },
+  "homepage": "https://github.com/johnkariuki/africastalking-wrapper#readme",
+  "engine": {
+    "node": "^6.6.0",
+    "npm": "^3.10.8"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.2.2",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1"
+  },
+  "dependencies": {
+    "js-yaml": "^3.6.1",
+    "lodash": "^4.16.0",
+    "querystring": "^0.2.0",
+    "request": "^2.75.0"
+  }
+}
